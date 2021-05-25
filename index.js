@@ -1,24 +1,23 @@
-var mainElement = document.getElementById("mainElement");
-var getNav = document.querySelector("nav");
-var hamburgerMenu = document.getElementById("hamburgermenu");
-var bodyElement = document.body;
-var closeButton = document.getElementById("closeButton");
-var f = document.querySelectorAll("toggle-nav");
+const mainElement = document.getElementById("mainElement");
+const getNav = document.querySelector("nav");
+const hamburgerMenu = document.getElementById("hamburgermenu");
+const bodyElement = document.body;
+const closeButton = document.getElementById("closeButton");
 
-hamburgerMenu.addEventListener("click", function () {
+hamburgerMenu.addEventListener("click", () => {
     getNav.classList.toggle("open");
     closeButton.style.visibility = "visible";
     closeButton.style.zIndex = "1001";
     bodyElement.classList.toggle("open");
 });
 
-closeButton.addEventListener("click", function () {
+closeButton.addEventListener("click", () => {
     getNav.classList.toggle("open");
     bodyElement.classList.remove("open");
     closeButton.style.visibility = "hidden";
 });
 
-mainElement.addEventListener("click", function () {
+mainElement.addEventListener("click", () => {
     getNav.classList.remove("open");
     bodyElement.classList.remove("open");
     closeButton.style.visibility = "hidden";

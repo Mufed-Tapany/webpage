@@ -260,7 +260,7 @@ body.open {
     }
 }
 
-@media (prefers-color-scheme: light) {
+@media (prefers-color-scheme: dark) {
     body {
         background-color: rgb(27, 21, 21);
     }
